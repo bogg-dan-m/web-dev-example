@@ -123,14 +123,14 @@ h1{
 	line-height: 294px;
 }
 .inner2{
-	background-image: url("1024/imgs/148157989.png");
+	background-image: url("../1024/imgs/148157989.png");
 	background-size: cover;
 	flex-basis: 341px;
 
 
 }
 .inner3{
-	background-image: url("1024/imgs/83812863.png");
+	background-image: url("../1024/imgs/83812863.png");
 	background-size: cover;
 	flex-basis: 341px;
 }
