@@ -1,0 +1,320 @@
+@font-face{
+	font-family: "Montserrat";
+	src: url("1024/fonts/Montserrat-Regular.ttf");
+}
+@font-face{
+	font-family: "Quicksand Bold";
+	src: url("1024/fonts/Quicksand-Bold.ttf");
+	font-weight: bold;
+}
+
+
+body{
+	background-color: #ebebeb;
+}
+
+*{
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+	box-sizing: border-box;
+}
+
+.wrapper{
+	width: 1024px;
+	height: 1777px;
+	margin: auto;
+	max-width: 1024px;
+	background-color: lightgrey;
+}
+
+.dws_menu{
+	margin: 0;
+	padding: 0;
+	font-family: "Montserrat";
+}
+
+
+.dws_menu ul{
+	list-style: none;
+	display: flex;
+	height: 90px;
+	background-color: #515151;
+}
+
+
+.dws_menu>ul li a{
+	color: #ffffff;
+	text-decoration: none;
+    margin-left: 28px;
+    margin-right: 5px;
+    line-height: 6;
+    font-size: 15px;
+    padding: 10px;
+}
+
+
+.dws_menu li a:hover{
+	background-color: #ffffff;
+	color: #515151;
+}
+
+.banner{
+	height: 577px;
+	background: linear-gradient(to bottom right, #19b4c6, #078aa4 );
+	padding-top: 190px;
+	padding-left: 82px;
+}
+
+h1{
+	font-family: "Montserrat";
+	font-size: 60px;
+	color: #fff;
+	text-align: left;
+	letter-spacing: 0.7px;
+	word-spacing: 5px;
+	line-height: 72px;
+
+}
+
+.banner p{
+	width: 698px;
+	margin-top: 49px;
+	font-family: "Montserrat";
+	font-size: 34px;
+	color: #fff;
+	letter-spacing: 1px;
+	opacity: 0.5;
+	display: inline-block;
+}
+.textBox{
+	height: 243px;
+	display: flex;
+}
+.first{
+	background-color: #27212c;
+	flex-grow: 1;
+	padding-left: 85px;
+
+}
+.first p{
+	font-family: "Montserrat";
+	font-size: 30px;
+	color: #9282a0;
+	line-height: 243px;
+	letter-spacing: 0.7px;
+}
+.second{
+	background-color: #bc3183;
+	flex-basis: 228px;
+	line-height: 254px;
+	padding-left: 98px;
+}
+.imgs{
+	height: 294px;
+	width: 1024px;
+	display: flex;
+}
+
+.inner1{
+	background-color: #5b0fa1;
+	flex-basis: 341px;
+	text-align: center;
+	line-height: 294px;
+}
+.inner2{
+	background-image: url("1024/imgs/148157989.png");
+	background-size: cover;
+	flex-basis: 341px;
+
+
+}
+.inner3{
+	background-image: url("1024/imgs/83812863.png");
+	background-size: cover;
+	flex-basis: 341px;
+}
+
+h2{
+	font-size: 30px;
+	color: #088ca5;
+	font-family: "Montserrat";
+	margin-top: 48px;
+	margin-left: 77px;
+
+}
+p{
+	font-size: 18px;
+	color: #515151;
+	font-family: "Montserrat";
+	line-height: 26px;
+	margin-bottom: 30px;
+}
+
+
+.bottom div{
+	display: inline-block;
+	width: 400px;
+	margin-left: 81px;
+	margin-top: 19px;
+	margin-right: -26px;
+
+}
+
+
+.dws_menu [type="checkbox"]{
+	display: none;
+}
+
+.dws_menu label.toggleMenu{
+	background: #515151;
+	text-decoration: uppercase;
+	font-size: 15px;
+	cursor: pointer;
+	position: relative;
+	display: none;
+	height: 40px;
+	line-height: 3;
+	color: white;
+	padding-left: 20px;
+	font-family: "Montserrat";
+}
+
+
+
+@media screen and (max-width: 320px)
+{
+
+	.wrapper{
+		width: 320px;
+	}
+
+	.dws_menu{
+		overflow: hidden;
+	}
+
+	.dws_menu ul{
+		display: none;
+	}
+
+	.dws_menu label.toggleMenu{
+		display: block;
+	}
+
+	input.toggleMenu:checked + label.toggleMenu{
+		background-color: black;
+		color: white;
+	}
+
+	input.toggleMenu:checked ~ ul{
+		display: block;
+	}
+
+	.banner{
+		height: 193px;
+		padding-top: 64px;
+		padding-left: 27px;
+	}
+
+	h1{
+		font-size: 20px;
+		text-align: left;
+		letter-spacing: 0.23px;
+		word-spacing: 1.7px;
+		line-height: 24px;
+
+	}
+
+
+	.banner p{
+		width: 232px;
+		margin-top: 16px;
+		font-size: 12px;
+		letter-spacing: 1px;
+		opacity: 0.5;
+	}
+	
+	.banner img{
+		height: 8px;
+		width: 6px;
+	}
+
+	.textBox{
+		height: 80px;
+	}
+
+	.first{
+		padding-left: 28px;
+	}
+
+	.first p{
+		font-size: 10px;
+		line-height: 80px;
+		letter-spacing: 0.23px;
+	}
+
+
+	.second{
+		flex-basis: 76px;
+		line-height: 81px;
+		padding-left: 32px;
+	}
+
+	.second img{
+		width: 15px;
+		height: 15px;
+	}
+
+
+	.imgs{
+		display: block;
+		width: 320px;
+	}
+
+	.inner1{
+		width: 320px;
+		height: 270px;
+	}
+
+	.inner2{
+		background-image: url("/tasks/task-3/1024/imgs/148157989.png");
+		width: 320px;
+		height: 270px;
+	}
+
+	.inner3{
+		background-image: url("/tasks/task-3/1024/imgs/83812863.png");
+		width: 320px;
+		height: 270px;
+	}
+	
+
+	.bottom{
+		margin-top: 560px;
+		width: 320px;
+		word-wrap: break-word;
+	}
+
+	h2{
+		font-size: 22px;
+		margin-top: 16px;
+		margin-left: 26px;
+
+	}
+
+	.textBlock1 p{
+		width: 285px;
+		margin-left: -58px;
+		font-size: 10px;
+		line-height: 2;
+	}
+
+	.textBlock2 p{
+		width: 285px;
+		margin-left: -58px;
+		margin-top: -10px;
+		font-size: 10px;
+		line-height: 2;
+	}
+
+}
